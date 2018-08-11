@@ -1,0 +1,45 @@
+ME 106 ASSIGNMENT 1
+
+1. Which of the following variables are not allowed in Python 3?
+Variables a, b, e, and f are not allowed. Variable names must start with a letter or underscore and can only contain letters, numbers, and underscores, no special characters.  
+
+2. Create a Python calculator to track turnout for an upcoming march.
+a. Suggest python variable names
+i. Target number of people to attend the march - marchAttendanceTarget
+ii. Number of hard yeses - marchSignUps
+iii. Any multipliers - flakeRate
+b. Calculate expected turnout as percentage of target attendance
+marchAttendanceTarget = 100
+marchSignUps = 150
+flakeRate = .25
+marchAttendanceExpected = marchSignUps * (1 - flakeRate)
+marchProgressToGoal = marchAttendanceExpected / marchAttendenceTarget * 100
+
+3. An error occurs in each block of code below. For each, explain why the error occured, what kind of error it is, and what in general would cause this type of error.
+a. i. This error occured because the variable lastName was mistyped when using it to create the new variable fullNameMethod2. The variable was instead typed as lastname, without the capitalization. 
+ii. This error is a name error, which occurs when a variable name is not found. 
+iii. This error occured because python is case sensititive, so it's important to double-check capitalizations in variable names.
+
+b. This error occured because the command attempted to add an integer and a string. The variable zipCode would have been set to be an integer, since the zip code is numerical and there were no quotes around it. The variable zipCodePlusFour would have been correctly set as a string, since there were quotes around it.
+ii. This is a type error which occurs when an operation is applied to an variable that is an unsupported type for that operation. 
+iii. This type of error will occur in general if something which should be a string, like a zip code, looks like a number. A zip code should be a string, because it doesn't represent 50,665 of something. To prevent these types of errors, put quotes around the value in cases like this when assigning the information to a variable, like "50665".
+
+4. a. Suggest a data set to help understand how the cash bail system impacts your county, state, or country
+https://www.bjs.gov/index.cfm?ty=dcdetail&iid=276
+American Indian and Alaska Natives in Local Jails
+16 csv files, with varying numbers of records around (10-100)
+
+b. What information would a community organization need to collect, track, or analyze in order to run a bailout action?
+averageBailCost
+numberPeopleHeld
+bailoutFundsGoal
+mothersDayDate
+numberDonations
+averageDonationPerPerson
+numberVolunteersSignedUp
+flakeRate
+numberVolunteersExpected
+bailoutShiftsGoal
+
+
+
